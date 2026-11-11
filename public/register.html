@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#24213e">
+    <title>Create Account — ProfileForge</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/auth.css">
+</head>
+
+<body class="auth-page">
+
+    <div class="auth-shell">
+
+        <section class="auth-visual">
+
+            <a href="/register.html" class="auth-brand">
+                <span class="auth-brand-icon">P</span>
+                <span>profile<span class="auth-brand-light">forge</span></span>
+            </a>
+
+            <div class="auth-visual-content">
+
+                <div class="auth-eyebrow">
+                    ✦ BUILD YOUR DIGITAL IDENTITY
+                </div>
+
+                <h1>Make your skills and story <span>stand out.</span></h1>
+
+                <p>
+                    Create your own professional profile space.
+                    Showcase your expertise, customize your card,
+                    and keep everything organized in one place.
+                </p>
+
+                <div class="auth-feature-list">
+
+                    <div class="auth-feature">
+                        <span class="auth-feature-icon">✧</span>
+                        Your own professional profile studio
+                    </div>
+
+                    <div class="auth-feature">
+                        <span class="auth-feature-icon">▤</span>
+                        Persistent profile storage
+                    </div>
+
+                    <div class="auth-feature">
+                        <span class="auth-feature-icon">♧</span>
+                        Private account and session protection
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="auth-visual-footer">
+                © 2026 ProfileForge Studio. All rights reserved.
+            </div>
+
+        </section>
+
+        <main class="auth-form-area">
+
+            <section class="auth-card">
+
+                <a href="/register.html" class="auth-mobile-brand">
+                    <span class="auth-brand-icon">P</span>
+                    <span>profile<span class="auth-brand-light">forge</span></span>
+                </a>
+
+                <div class="auth-card-heading">
+                    <div class="auth-eyebrow">GET STARTED FOR FREE</div>
+
+                    <h2>Create your account.</h2>
+
+                    <p>
+                        Set up your ProfileForge workspace
+                        and start building your professional identity.
+                    </p>
+                </div>
+
+                <div id="authError" class="auth-error" role="alert"></div>
+                <div id="authSuccess" class="auth-success" role="status"></div>
+
+                <form id="authForm" class="auth-form" data-mode="register">
+
+                    <div class="auth-field">
+                        <label for="name">Full name</label>
+
+                        <input type="text" id="name" name="name" placeholder="e.g. Saurabh Mehta" autocomplete="name"
+                            maxlength="60" required>
+                    </div>
+
+                    <div class="auth-field">
+                        <label for="email">Email address</label>
+
+                        <input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email"
+                            maxlength="254" required>
+                    </div>
+
+                    <div class="auth-field">
+                        <label for="password">Create password</label>
+
+                        <div class="password-wrap">
+                            <input type="password" id="password" name="password" placeholder="Create a strong password"
+                                autocomplete="new-password" minlength="10" required>
+
+                            <button type="button" class="password-toggle" data-target="password">
+                                Show
+                            </button>
+                        </div>
+
+                        <p class="password-hint">
+                            Use at least 10 characters.
+                        </p>
+                    </div>
+
+                    <div class="auth-field">
+                        <label for="confirmPassword">Confirm password</label>
+
+                        <div class="password-wrap">
+                            <input type="password" id="confirmPassword" name="confirmPassword"
+                                placeholder="Enter your password again" autocomplete="new-password" required>
+
+                            <button type="button" class="password-toggle" data-target="confirmPassword">
+                                Show
+                            </button>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="auth-submit" id="authSubmit">
+                        Create account →
+                    </button>
+
+                </form>
+
+                <div class="auth-switch">
+                    Already have an account?
+                    <a href="/login.html">Sign in</a>
+                </div>
+
+                <div class="auth-security-note">
+                    <span>♧</span>
+                    Your password is securely hashed before storage.
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+    <script src="/js/auth.js"></script>
+</body>
+
+</html>

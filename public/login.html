@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#24213e">
+    <title>Sign In — ProfileForge</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/auth.css">
+</head>
+
+<body class="auth-page">
+
+    <div class="auth-shell">
+
+        <section class="auth-visual">
+
+            <a href="/login.html" class="auth-brand">
+                <span class="auth-brand-icon">P</span>
+                <span>profile<span class="auth-brand-light">forge</span></span>
+            </a>
+
+            <div class="auth-visual-content">
+                <div class="auth-eyebrow">
+                    ✦ YOUR PERSONAL BRAND STUDIO
+                </div>
+
+                <h1>Your next opportunity starts with a <span>great profile.</span></h1>
+
+                <p>
+                    Bring your professional identity together.
+                    Create beautiful profile cards, showcase your skills,
+                    and share your journey with the world.
+                </p>
+
+                <div class="auth-feature-list">
+
+                    <div class="auth-feature">
+                        <span class="auth-feature-icon">✧</span>
+                        Beautiful customizable profile cards
+                    </div>
+
+                    <div class="auth-feature">
+                        <span class="auth-feature-icon">▤</span>
+                        Securely save and manage your profiles
+                    </div>
+
+                    <div class="auth-feature">
+                        <span class="auth-feature-icon">↗</span>
+                        Showcase your professional identity
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="auth-visual-footer">
+                © 2026 ProfileForge Studio. All rights reserved.
+            </div>
+
+        </section>
+
+        <main class="auth-form-area">
+
+            <section class="auth-card">
+
+                <a href="/login.html" class="auth-mobile-brand">
+                    <span class="auth-brand-icon">P</span>
+                    <span>profile<span class="auth-brand-light">forge</span></span>
+                </a>
+
+                <div class="auth-card-heading">
+                    <div class="auth-eyebrow">WELCOME BACK</div>
+
+                    <h2>Sign in to your account.</h2>
+
+                    <p>
+                        Enter your credentials to continue to your
+                        ProfileForge workspace.
+                    </p>
+                </div>
+
+                <div id="authError" class="auth-error" role="alert"></div>
+                <div id="authSuccess" class="auth-success" role="status"></div>
+
+                <form id="authForm" class="auth-form" data-mode="login">
+
+                    <div class="auth-field">
+                        <label for="email">Email address</label>
+
+                        <input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email"
+                            maxlength="254" required>
+                    </div>
+
+                    <div class="auth-field">
+                        <label for="password">Password</label>
+
+                        <div class="password-wrap">
+                            <input type="password" id="password" name="password" placeholder="Enter your password"
+                                autocomplete="current-password" required>
+
+                            <button type="button" class="password-toggle" data-target="password">
+                                Show
+                            </button>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="auth-submit" id="authSubmit">
+                        Sign in →
+                    </button>
+
+                </form>
+
+                <div class="auth-switch">
+                    Don't have an account?
+                    <a href="/register.html">Create an account</a>
+                </div>
+
+                <div class="auth-security-note">
+                    <span>♧</span>
+                    Your session is protected with secure cookies.
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+    <script src="/js/auth.js"></script>
+</body>
+
+</html>
